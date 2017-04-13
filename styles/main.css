@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.2s;
+}
+.msg, .msg-self {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #efefef;
+}
+.msg > p, .msg-self > p{
+  margin-top: 0px;
+}
+.msg-self {
+  text-align: right;
+}
+.msg-self > b{
+  color: #50b1ff;
+}
+#text {
+  margin: 5px 0px;
+  width: 90vw;
+}
+#post {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 53px;
+  width: 10vw;
+  background-color: #50b1ff;
+  border: none;
+  color: #FFF;
+}
+#chat-container{
+  padding: 10px;
+  height: 80vh;
+  overflow-y:  scroll;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;  
+  color: black; 
+}
+#input-container > input {
+  border-bottom: none !important;
+  height: 53px;
+}
+#input-container{
+  display: inline-flex;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+#chat-panel{
+  background: #1d1d1d;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+/*login panel*/
+#login-panel{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  z-index: 100;
+  background-color:#1d1d1d;
+}
+input{
+  font-size: 1.2em;
+  padding: 10px 20px 10px 20px;
+  margin: 10px auto;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px crimson;
+  color: white;
+}
+input:focus{
+  border-bottom: solid 2px white;        
+}
+#login-panel > h2 {
+  margin-top: 100px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#login-panel > button{
+  margin: 20px auto;
+  display: block;
+  padding: 5px 15px 8px 15px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#login-panel > button:focus{
+  outline: none;
+}      
+#login-panel > button:hover{
+  background: crimson;
+  color: white;
+  text-decoration: underline;
+}      
+#login-panel > input {
+  display: block;
+}
+#logoutbutton{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#logoutbutton:hover{
+  letter-spacing: 2px;
+  color: crimson;
+  font-weight: 600;
+}
+#chat-panel > h2{
+  width: 100%;
+  padding-left: 20px;
+  font-weight: 400;
+}
